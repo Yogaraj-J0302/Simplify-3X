@@ -1,0 +1,321 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.logoImg{
+    width:100px;
+    height:50px;
+    cursor:pointer;
+}
+.navContent{
+    gap:100px;
+}
+.navContent ul li{
+    margin-left:30px;
+    position:relative;
+}
+.navContent ul li::after{
+    content:"";
+    height:3px;
+    width:0;
+    position:absolute;
+    transition: 0.5s;
+    background-color: rgb(167, 4, 4);
+    bottom:0px;
+    left:0px;
+}
+.navContent ul li:hover::after,.navContent ul li:hover::before{
+    width:100%;
+}
+.navContent ul li::before{
+    content:"";
+    height:2px;
+    width:0;
+    position:absolute;
+    transition: 0.5s;
+    background-color: rgb(167, 4, 4);
+    top:0px;
+    right:0px;
+}
+.navContent ul li a{
+    color:black;
+}
+.navContent ul li a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 94%;
+}
+.contactBtn{
+    color:#fff;
+    background-color: rgb(167, 4, 4);
+    width:100px;
+    border:none;
+    border-radius: 5px;
+    padding:3px;
+}
+.contactUs{
+    display: flex;
+    justify-content: center;
+}
+.firstBody{
+    display:flex;
+    justify-content:space-between;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.75)), url("./Images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:whitesmoke;
+    min-height:fit-content;
+}
+.firstBodyLeft{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:70px 50px;
+    width:80%
+}
+.demoBtn,.trialBtn{
+    font-weight: 500;
+    padding:3px 30px;
+    width: 200px;
+    font-size: 16px;
+    border:none;
+    border-radius:5px;
+}
+.demoBtn{
+    background-color: #fff;
+    color:rgb(212, 1, 1);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.trialBtn{
+    color:#fff;
+    background-color: rgb(167, 4, 4);
+}
+.firstBodyLeftBox{
+    display: flex;
+    justify-content:flex-start;
+    gap:20px;
+    
+}
+.firstBodyLeftBoxSq{
+    padding:30px;
+    background: rgba(255,255,255,0.2);
+    width:30%;
+    height:100%;
+    min-height:fit-content;
+}
+.firstBodyLeftBoxSq h6{
+    text-transform:uppercase;
+}
+.firstBodyRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width:20%;
+}
+.toggle{
+    border:2px solid aqua;
+    height:80%;
+    padding:50px 0;
+    width:60px;
+}
+.firstBodyRightTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    height:40%;
+}
+.firstBodyRightBottom{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: flex-start;
+    align-items: center;
+    height:60%;
+    text-align: center;
+}
+button:active{
+    font-size: 99%;
+}
+.fa{
+    cursor: pointer;
+}
+.secondBody{
+    padding:50px;
+}
+.secondBodyLeft{
+display: flex;
+flex-direction: column;
+gap:50px;
+}
+.SignatureLogo{
+    border:7px solid rgb(124, 123, 123);
+    width:260px;
+}
+.SignatureLogoIMG{
+    position:relative;
+    top:20px;
+    left:30px;
+}
+.secondBodyLeftContent{
+    width:90%;
+    text-align: justify;
+}
+.secondBodyRight{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding:10px;
+}
+.secondBodyRightContent{
+    height:350px;
+    width:350px;
+    border:7px solid rgb(124, 123, 123);
+}
+.secondBodyRightIMG{
+    position: relative;
+    box-shadow: 0 0 5px 1px rgb(167, 4, 4);
+    top:30px;
+    right:37px;
+}
+.thirdBody{
+    padding:70px 50px;
+}
+.thirdBodyLeft{
+    display: flex; 
+    flex-direction: column; 
+    gap:10px;
+}
+.featuresIMG{
+    align-self: center;
+    box-shadow: 0 0 3px 0 rgb(167, 4, 4);
+    border-radius: 10px; 
+    object-fit: cover;
+}
+.thirdBodyRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap:30px;
+    text-align: justify;
+}
+.featuresHead{
+    position:relative;
+}
+.featuresHead::before{
+    position:absolute;
+    content:"";
+    height:3px;
+    width:110px;
+    background-color: rgb(167, 4, 4);
+    bottom:0;
+}
+.fourthBody{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    padding:70px 25px;
+    background-image:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.75)), url("https://www.bgsu.edu/content/dam/BGSU/college-of-arts-and-sciences/computer-science/images/Featured7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fourthBodyOne{
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgb(167, 4, 4);
+    padding:20px;
+    /* box-sizing: border-box; */
+    
+}
+.mainframe ul,.api ul,.db ul{
+    padding: 0 30px;
+    width:100%;
+    list-style-type:none;
+    list-style-image: url(fa-check-circle);
+    display: flex;
+    flex-wrap: wrap;
+}
+.fourthBodyOne .fa{
+color:rgb(0, 190, 117);
+}
+.fourthBodyTwo{
+    align-self: center;
+    text-align: center;
+    color:white;
+}
+.mainframeHead{
+    color: rgb(167, 4, 4);
+    font-weight:bold;
+}
+.underLine{
+    position: relative;
+}
+.underLine::before{
+    content:"";
+    height:2px;
+    width:30%;
+    position:absolute;
+    background-color: rgb(167, 4, 4);
+    bottom:-5px;
+    right:35%;
+}
+.fifthBody{
+    padding:70px 25px;
+    background-image:radial-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url("https://www.actis.co.in/wp-content/uploads/2018/03/sales-contact-bg-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fifthBodyLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    align-items: flex-end;
+    color:whitesmoke;
+}
+.fifthBodyRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:10px;
+}
+.circle{
+    height:350px;
+    width:350px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    box-sizing: border-box;
+    padding:30px;
+    box-shadow: 0 0 5px 1px rgb(167, 4, 4);
+}
+.circle p{
+    padding:5px;
+    border:2px solid red;
+    border-radius: 50%;
+}
+.moreBtn{
+    font-weight: 500;
+    padding:3px 30px;
+    width: 200px;
+    font-size: 16px;
+    border:none;
+    border-radius:5px;
+    background-color: rgb(167, 4, 4);
+    color:white;
+}
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
